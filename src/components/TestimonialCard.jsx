@@ -6,8 +6,8 @@ import "./styles.css";
 
 const TestimonialCard = () => {
   return (
-    <div className="center-box1" style={{ marginTop: "5%" }}>
-      <div className="card-content1">
+    <div className="center-box1" style={{ marginTop: "15%" }}>
+      <div className="card-content1" style={{ background: "#F7F5F9" }}>
         <Card.Body>
           <Card.Title className="mt-3">
             <FaQuoteLeft

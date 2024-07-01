@@ -2,9 +2,9 @@ import './App.css';
 import Home from './Pages/Home';
 import AboutUs from './components/About';
 import AddCart from './components/AddCart';
+import Footer from './components/Footer';
+import Lower from './components/Lower';
 import NavBar from './components/NavBar';
-import Toaster from './components/Toaster';
-
 
 function App() {
   return (
@@ -12,10 +12,9 @@ function App() {
       <NavBar />
       <Home />
       <AboutUs />
-      <Toaster />
       <AddCart />
-
-      {/* <Footer /> */}
+      <Lower />
+      <Footer />
     </div>
   );
 }

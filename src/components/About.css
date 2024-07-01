@@ -93,6 +93,7 @@
 
 @media only screen and (max-width: 768px) {
   .about-us-block {
+    margin-top: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -138,7 +139,7 @@
 
 /* card */
 .center-box {
-  width: 99%;
+  width: 95%;
   max-width: 1040px;
   height: auto;
   min-height: 484px;
@@ -147,6 +148,28 @@
   justify-content: center;
   margin: auto;
   border: 1px solid #ddd;
-  background-color: #f8f9fa;
+  background-color: white;
   padding: 20px;
+}
+
+/* Lower */
+
+.hobby-item {
+  margin: 20px;
+  /* text-align: center; */
+}
+
+.hobby-item img {
+  max-height: 638px;
+  margin-bottom: 10px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.container {
+  background-color: #f7fdff;
+  height: 80vh;
+  top: 10%;
 }

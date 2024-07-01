@@ -9,6 +9,7 @@
   text-align: center;
   padding: 20px;
 }
+
 .detial-head {
   position: absolute;
   width: 580px;
@@ -32,49 +33,36 @@
   height: 120px;
   left: 100px;
   top: 186px;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
-  letter-spacing: 0.02em;
-
+  letter-spacing: 0.01em;
   color: #000000;
 }
 
 .details-second {
-  /* If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products, services or events. Hop on your hobbyhorse and enjoy the ride. */
-
   position: absolute;
-  width: 706px;
+  /* width: 706px; */
   height: 60px;
   left: 101px;
   top: 322px;
 
-  /* Text sm/Light */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
-  /* or 214% */
   letter-spacing: 0.02em;
 
-  /* Base/Black */
   color: #000000;
 }
 
 .right-column {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100vh; /* Adjust as needed */
-}
-
-.content {
-  text-align: center;
-  /* padding: 20px; */
 }
 
 .auth {
@@ -125,11 +113,74 @@
 }
 
 .image-sec {
-  /* Group 27 */
-
   position: absolute;
-  width: 697.07px;
+  width: 600.07px;
   height: 216px;
   left: 100px;
   top: 462px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+  .left-column,
+  .right-column {
+    height: auto;
+    padding: 20px;
+  }
+  .detial-head {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .details,
+  .details-second {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .image-sec {
+    top: 500px;
+    width: calc(100% - 100px);
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-column,
+  .right-column {
+    flex-direction: column;
+    height: auto;
+  }
+  .detial-head {
+    position: static;
+    /* margin-top: 20px; */
+    font-size: 22px;
+    /* text-align: center; */
+  }
+  .details {
+    position: static;
+    font-size: 20px;
+    text-align: center;
+    justify-content: left;
+    margin-top: 10px;
+  }
+  .details-second {
+    opacity: 0;
+  }
+  .noob {
+    position: static;
+    width: 96%;
+    margin-top: 290px;
+    /* margin-left: -4%; */
+  }
+}
+
+@media (max-width: 576px) {
+  .detial-head {
+    font-size: 24px;
+  }
+  .details,
+  .details-second {
+    /* font-size: 10px; */
+    line-height: 20px;
+  }
 }
